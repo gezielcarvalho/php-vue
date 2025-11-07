@@ -1,0 +1,9 @@
+# .dockerignore
+.git
+.gitignore
+README.md
+devlog.md
+.docker/dbdata
+node_modules
+.env.local
+.env.production

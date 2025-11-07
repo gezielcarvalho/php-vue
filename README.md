@@ -47,14 +47,40 @@ php-vue/
 
 ### Prerequisites
 
-- **PHP 8.1+** with the following extensions:
+- **PHP 8.1+** with the following extensions (for local development):
   - PDO
   - PDO MySQL (if using MySQL database)
-- **Apache/Nginx** web server
+- **Apache/Nginx** web server (for local development)
 - **MySQL/MariaDB** (optional, for database features)
+- **Docker & Docker Compose** (recommended for easy setup)
 - **Composer** (optional, for dependency management)
 
-### Installation
+### Quick Start with Docker (Recommended)
+
+1. **Clone the repository**
+
+   ```bash
+   git clone <repository-url> php-vue
+   cd php-vue
+   ```
+
+2. **Start the application with Docker**
+
+   ```bash
+   docker-compose up -d
+   ```
+
+   This will start:
+
+   - **PHP-Vue Application**: http://localhost:8000
+   - **PHPMyAdmin**: http://localhost:8088 (root/A_1234567)
+   - **MySQL Database**: localhost:3306
+
+3. **Access your application**
+
+   Open your browser and navigate to `http://localhost:8000`
+
+### Manual Installation
 
 1. **Clone the repository**
 
@@ -113,6 +139,39 @@ php -S localhost:8000
 ```
 
 Then visit `http://localhost:8000` in your browser.
+
+### Docker Commands
+
+**Start the application:**
+
+```bash
+docker-compose up -d
+```
+
+**View logs:**
+
+```bash
+docker-compose logs -f
+```
+
+**Stop the application:**
+
+```bash
+docker-compose down
+```
+
+**Rebuild containers:**
+
+```bash
+docker-compose down
+docker-compose build --no-cache
+docker-compose up -d
+```
+
+**Access database:**
+
+- **PHPMyAdmin**: http://localhost:8088
+- **Direct MySQL**: `mysql -h localhost -P 3306 -u root -pA_1234567 php_vue_db`
 
 ## Usage
 

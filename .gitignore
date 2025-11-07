@@ -1,2 +1,184 @@
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# IDE and Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.settings/
+.buildpath
+.sublime-project
+.sublime-workspace
+
+# PHP Files
+# Environment variables
 .env
-.vscode
+.env.local
+.env.production
+.env.staging
+.env.testing
+
+# Composer
+/vendor/
+composer.phar
+composer.lock
+
+# Logs
+*.log
+/logs/
+/storage/logs/
+error.log
+access.log
+
+# Cache
+/cache/
+/tmp/
+*.cache
+
+# Session files
+/sessions/
+sess_*
+
+# Upload directories
+/uploads/
+/public/uploads/
+
+# Node.js and NPM (for potential Vue.js development)
+node_modules/
+npm-debug.log
+yarn-error.log
+yarn-debug.log
+.npm
+.yarn-integrity
+.pnp.*
+.yarn/
+dist/
+build/
+
+# Vue.js specific
+# Build outputs
+/dist/
+/build/
+.nuxt/
+.output/
+.vercel/
+
+# Vue development
+*.local
+.cache/
+.temp/
+.tmp/
+
+# Package managers
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Docker
+# Keep docker-compose.yaml but ignore data
+.docker/dbdata/
+.docker/data/
+*.pid
+
+# Database
+*.sqlite
+*.sqlite3
+*.db
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# Security
+*.pem
+*.key
+id_rsa*
+*.p12
+*.pfx
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+
+# Dependency directories
+jspm_packages/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# dotenv environment variables file
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Stores VSCode versions used for testing VSCode extensions
+.vscode-test
+
+# Temporary folders
+tmp/
+temp/
+
+# OS generated files
+.directory
+
+# Archives
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# WordPress (if integrating)
+wp-config.php
+wp-content/uploads/
+
+# Laravel Mix (if using)
+/public/hot
+/public/storage
+/storage/*.key
+
+# PHPUnit
+/phpunit.xml
+/.phpunit.result.cache
+
+# Codeception
+/tests/_output/*
+/tests/_support/_generated
+
+# Psalm
+/psalm.xml
+/.psalm.cache
+
+# PHP CS Fixer
+/.php_cs
+/.php_cs.cache
+/.php-cs-fixer.cache
+
+# Custom application files
+/config/database.php
+/config/app.php
